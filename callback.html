@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" contect="Personaliza tus bot de twitter para hacerlos pasar por personas normales. Todos creeran que tus bots son personas. Camuflate" />
+    <meta name="keywords" contect="Bot, twitter, personas, humanos, camuflame" />
+
+    <title>Camuflame</title>
+
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-3.3.4-dist/css/bootstrap-theme.min.css" rel="stylesheet" >
+    <link rel="shortcut icon" type="image/x-icon" href="chameleon2.ico">
+
+
+
+  </head>
+  <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap-3.min.js"></script>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Camuflame</h1>
+        <p>Bienvenido a Camuflame. La app de Internet que te permitirá cambiar su identidad en twitter con un sólo clic. </p>
+      </div>
+      <form name = "crearPerfil" id="crearPerfilSend" action="crearperfil.php" method = "POST">
+      <label for="hash1">Selecciona un hashtag:</label>
+      <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon1">#</span>
+      <input type="text" id="hash1" class="form-control" name="hashtag1" placeholder="hashtag 1">
+      </div>
+      <label for="hash2">Selecciona un segundo hashtag:</label>
+      <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2">#</span>
+      <input type="text" id="hash2" class="form-control" name="hashtag2" placeholder="hashtag 2">
+      </div>
+      <label for="hash3">Selecciona un tercer hashtag:</label>
+      <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon3">#</span>
+      <input type="text" id="hash3" class="form-control" name="hashtag3" placeholder="hashtag 3">
+      </div>
+      <label for="sel1">Selecciona el sexo:</label>
+      <select class="form-control" name="sexoE" id="sel1">
+        <option>Hombre</option>
+        <option>Mujer</option>
+        <option>Aleatorio</option>
+      </select>
+      <br>  
+      <button type="submit" class="btn btn-default btn-lg">
+       <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Cambiar perfil
+      </button>
+      </form>
+
+  </body>
+</html>
